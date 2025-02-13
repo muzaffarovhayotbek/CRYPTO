@@ -1,5 +1,4 @@
 .hero {
-  color: white;
   padding-top: 54.89px;
 }
 .hero h1 {
@@ -20,5 +19,5 @@
 }
 .carousel {
   padding-top: 20px;
-  margin-left: 70px;
+  padding-left: 70px;
 }
