@@ -21,7 +21,6 @@ function Home() {
         console.log(error);
       });
   }, [page]);
-
   return (
     <div>
       <Carousel />
@@ -64,7 +63,7 @@ function Home() {
 
       <div className="container">
         <ul className="pagion">
-          <img src={pagination} alt="pagination" />
+          <img src={pagination} alt="" />
           <li onClick={() => setPage(1)}>1</li>
           <li onClick={() => setPage(2)}>2</li>
           <li onClick={() => setPage(3)}>3</li>
