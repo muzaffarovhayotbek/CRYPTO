@@ -35,7 +35,12 @@ function Home() {
           <div>
             <ul className="titles">
               <li className="name">
-                <img src={bitcoin.image.small} alt={bitcoin.name} width={50} height={50} />
+                <img
+                  src={bitcoin.image.small}
+                  alt={bitcoin.name}
+                  width={50}
+                  height={50}
+                />
                 {bitcoin.name}
               </li>
               <li className="price">

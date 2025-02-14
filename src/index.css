@@ -22,6 +22,7 @@ a {
 img {
   object-fit: cover;
   display: flex;
+  cursor: pointer;
 }
 
 html {
