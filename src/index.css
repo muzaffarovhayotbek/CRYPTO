@@ -1,16 +1,15 @@
 @import url('./fonts.css');
 
-*
-,
+*,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat' , sans-serif;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
-ul,
+ul, li,
 ol {
   list-style: none;
 }
@@ -50,6 +49,5 @@ body {
   .hero {
     background-image: url('./assets/div.jss10.png');
     height: 400px;
-
   }
 }

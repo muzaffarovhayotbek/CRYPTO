@@ -7,13 +7,13 @@ function Card(props) {
   return (
     <div className="card">
       <div className="container">
-        <h3>
           <img src={crypto?.image} width={80} alt="" />
-          <h2>{crypto?.symbol}&nbsp;</h2>
+        <h3 className='card-title'>
+          <h2 className='card-symbol'>{crypto?.symbol}&nbsp;</h2>
           <span>{crypto?.price_change_percentage_24h.toFixed(2)} %</span>
         </h3>
 
-        <h2>₹159,249.00</h2>
+        <h2 className="card-price">₹159,249.00</h2>
       </div>
     </div>
   );

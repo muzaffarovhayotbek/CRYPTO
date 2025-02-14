@@ -8,17 +8,34 @@
   justify-content: center;
 }
 
-.card span{
-  /* font-family: 'Roboto';
-font-weight: 500;
-font-size: 21.83px;
-line-height: 25.58px;
-color: #FFFFFF; */
+.card-price {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 21.83px;
+  line-height: 25.58px;
+  color: #ffffff;
+  padding-top: 1px;
 }
 
-
-.card h2{
-
+.card-symbol {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 1px;
 }
-
-
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+.card span {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 15.75px;
+  line-height: 18.46px;
+  color: #0ecb81;
+}
