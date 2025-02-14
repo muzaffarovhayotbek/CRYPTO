@@ -3,6 +3,7 @@ import Carousel from '../../components/Carousel';
 import './Home.css';
 import axios from 'axios';
 import icon from '../../assets/icon.svg';
+import pagion from '../../assets/pagion.svg';
 
 function Home() {
   const [bitcoins, setBitcoins] = useState([]);
@@ -59,6 +60,17 @@ function Home() {
             </div>
           );
         })}
+
+      {/* <div className="container">
+        <ul className='pagion'>
+        <img src={pagion} alt="" width={20} />
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div> */}
     </div>
   );
 }

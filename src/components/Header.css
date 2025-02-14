@@ -34,6 +34,11 @@
   font-size: 14px;
   line-height: 24.5px;
   color: #000000de;
+  transition: all 0.7s;
+}
+.header-select button:hover{
+  background-color: #14161a;
+  color: white;
 }
 .header-select select {
   background-color: #14161a;
