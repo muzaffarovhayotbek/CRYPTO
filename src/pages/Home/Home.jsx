@@ -3,16 +3,16 @@ import Carousel from '../../components/Carousel';
 import './Home.css';
 import axios from 'axios';
 import icon from '../../assets/icon.svg';
-import pagion from '../../assets/pagion.svg';
-import reight from '../../assets/reight.svg';
+import pagination from '../../assets/pagination.svg';
+import right from '../../assets/right.svg';
 
 function Home() {
   const [bitcoins, setBitcoins] = useState([]);
-  const [pagion, setPagasion] = useState(1);
+  const [page, setPage] = useState(1);
   useEffect(() => {
     axios
       .get(
-        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=gecko_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h'
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=gecko_desc&per_page=10&page=${page}&sparkline=false&price_change_percentage=24h`
       )
       .then((response) => {
         setBitcoins(response.data);
@@ -20,7 +20,7 @@ function Home() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [page]);
 
   return (
     <div>
@@ -64,13 +64,16 @@ function Home() {
 
       <div className="container">
         <ul className="pagion">
-          <img src={pagion} alt="" />
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <img src={reight} alt="" width={20} />
+          <img src={pagination} alt="pagination" />
+          <li onClick={() => setPage(1)}>1</li>
+          <li onClick={() => setPage(2)}>2</li>
+          <li onClick={() => setPage(3)}>3</li>
+          <img
+            onClick={() => setPage(page + 1)}
+            src={right}
+            alt=""
+            width={20}
+          />
         </ul>
       </div>
     </div>
