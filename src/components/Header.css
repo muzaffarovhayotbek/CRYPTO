@@ -38,5 +38,6 @@
 .header-select select {
   background-color: #14161a;
   color: white;
+  cursor: pointer;
   border: none;
 }

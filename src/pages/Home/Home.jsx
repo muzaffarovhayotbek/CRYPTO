@@ -5,7 +5,7 @@ import axios from 'axios';
 import icon from '../../assets/icon.svg';
 
 function Home() {
-  const [bitcoin, setBitcoin] = useState(null); // Bitta coin uchun ob'ekt sifatida boshlaymiz
+  const [bitcoin, setBitcoin] = useState(null);
 
   useEffect(() => {
     axios
