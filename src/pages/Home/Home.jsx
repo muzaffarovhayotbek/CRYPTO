@@ -4,10 +4,11 @@ import './Home.css';
 import axios from 'axios';
 import icon from '../../assets/icon.svg';
 import pagion from '../../assets/pagion.svg';
+import reight from '../../assets/reight.svg';
 
 function Home() {
   const [bitcoins, setBitcoins] = useState([]);
-
+  const [pagion, setPagasion] = useState(1);
   useEffect(() => {
     axios
       .get(
@@ -61,16 +62,17 @@ function Home() {
           );
         })}
 
-      {/* <div className="container">
-        <ul className='pagion'>
-        <img src={pagion} alt="" width={20} />
+      <div className="container">
+        <ul className="pagion">
+          <img src={pagion} alt="" />
           <li>1</li>
           <li>2</li>
           <li>3</li>
           <li>4</li>
           <li>5</li>
+          <img src={reight} alt="" width={20} />
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 }
