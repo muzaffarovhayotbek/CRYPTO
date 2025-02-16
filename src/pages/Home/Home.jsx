@@ -62,7 +62,7 @@ function Home() {
         })}
 
       <div className="container">
-        <ul className="pagion">
+        <ul className="pagination">
           <img src={pagination} alt="" />
           <li onClick={() => setPage(1)}>1</li>
           <li onClick={() => setPage(2)}>2</li>
